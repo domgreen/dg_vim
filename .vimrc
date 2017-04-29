@@ -7,12 +7,15 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
+
+let g:airline_powerline_fonts = 1
 
 filetype plugin indent on "detect file types
 colorscheme molokai       "better colour scheme
