@@ -15,8 +15,8 @@ call vundle#end()            " required
 
 
 filetype plugin indent on "detect file types
+colorscheme molokai       "better colour scheme
 syntax on                 "add syntax highlighting
 set number                "turn on line numbers
 
 set cursorline		  "easy to see what line your on
-highlight CursorLine cterm=NONE ctermbg=235
