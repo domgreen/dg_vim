@@ -18,6 +18,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'myusuf3/numbers.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
