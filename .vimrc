@@ -19,6 +19,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'myusuf3/numbers.vim'
+Plugin 'tmhedberg/SimpylFold'
+"Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,4 +31,12 @@ syntax on                 "add syntax highlighting
 set number                "turn on line numbers
 set encoding=utf8
 set cursorline		  "easy to see what line your on
+
+" This is all about code folding
+set foldmethod=indent     "enable folding
+set foldlevel=99
+nnoremap <space> za       "enable folding with space bar
+let g:SimpylFold_docstring_preview=1
+
+" Cool fonts
 let g:airline_powerline_fonts = 1
