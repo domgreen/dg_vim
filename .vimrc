@@ -20,13 +20,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'tmhedberg/SimpylFold'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
 filetype plugin indent on "detect file types
 colorscheme molokai       "better colour scheme
+let python_highlight_all=1
 syntax on                 "add syntax highlighting
 set number                "turn on line numbers
 set encoding=utf8
@@ -37,6 +41,10 @@ set foldmethod=indent     "enable folding
 set foldlevel=99
 nnoremap <space> za       "enable folding with space bar
 let g:SimpylFold_docstring_preview=1
+
+" YouCompleteMe updates
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Cool fonts
 let g:airline_powerline_fonts = 1
