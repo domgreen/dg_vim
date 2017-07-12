@@ -23,7 +23,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,3 +49,6 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Cool fonts
 let g:airline_powerline_fonts = 1
 set backspace=indent,eol,start
+
+let g:go_fmt_command = "goimports"
+
