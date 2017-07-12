@@ -39,7 +39,7 @@ set cursorline		  "easy to see what line your on
 " This is all about code folding
 set foldmethod=indent     "enable folding
 set foldlevel=99
-nnoremap <space> za       "enable folding with space bar
+nnoremap <space> za 
 let g:SimpylFold_docstring_preview=1
 
 " YouCompleteMe updates
@@ -48,3 +48,4 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Cool fonts
 let g:airline_powerline_fonts = 1
+set backspace=indent,eol,start
