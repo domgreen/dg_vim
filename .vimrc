@@ -28,6 +28,7 @@ Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
+let mapleader=","
 filetype plugin indent on "detect file types
 colorscheme molokai       "better colour scheme
 let python_highlight_all=1
